@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+  font-size: calc(0.6vmin + 60%);
+}
+body{
+  font-family: 'Montserrat';
+}
+h1{
+font-size: 4rem;
+}
+h2{
+font-size: 2.6rem;
+}
+h3{
+font-size: 1.6rem;
+}
+h4{
+font-size: 1rem;
+}
+
+p{
+  font-size: 1rem;
+}
+
+
+@layer pages {
+.shadow-custom {
+  box-shadow: 3.07px 6.14px 15.35px rgba(0, 0, 0, 0.19);
+}
+
+}
+
+
+@layer components {
+  .cartBtn{
+    @apply rounded-full overflow-hidden  hover:bg-[#E9FF5C]  bg-primaryColor shadow-md text-white;
+  }
+  .Inputsign{
+    @apply focus:border-primaryColor focus:outline-none font-Poppins block w-full h-[52px] text-black  placeholder-black px-7 border-black border-[0.5px];
+  }
+  
+}
+@layer utilities {
+  .underline-primary:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid primaryColor; /* Replace 'yourPrimaryColor' with your color code */
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .underline-primary:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.Btn2{
+border-radius: 0px 0px 40.7576px 0px;
+}
+.Btn1{
+
+border-radius: 0px 0px 100px 0px;
+}
+
+
